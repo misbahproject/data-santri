@@ -70,7 +70,7 @@ $santri = query("SELECT * FROM santri");
                     <a class="badge bg-warning" href="ubah.php?id=<?= $row["id"]; ?>"><i
                             class="bi bi-pencil-square"></i></a>
                     <a class="badge bg-danger" href="hapus.php?id=<?= $row["id"]; ?>"
-                        onclick="return confirm('Apakah anda yakin?');"><i class="bi bi-trash text-danger"></i></a>
+                        onclick="return confirm('Apakah anda yakin?');"><i class="bi bi-trash text-white"></i></a>
                 </td>
             </tr>
             <?php $i++; ?>
