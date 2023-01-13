@@ -60,13 +60,12 @@ $santri = query("SELECT * FROM santri");
             <?php foreach( $santri as $row ) : ?>
             <tr>
                 <td><?= $i; ?></td>
-                <td><?= $row["nama santri"]; ?></td>
-                <td><?= $row["alamat santri"]; ?></td>
-                <td><?= $row["no_telp"]; ?></td>
-                <td><?= $row["nama_ayah"]; ?></td>
-                <td><?= $row["nama_ibu"]; ?></td>
+                <td><?= $row["nama"]; ?></td>
+                <td><?= $row["alamat"]; ?></td>
+                <td><?= $row["telp"]; ?></td>
+                <td><?= $row["ayah"]; ?></td>
+                <td><?= $row["ibu"]; ?></td>
                 <td>
-                    <a class="badge bg-info" href="detail.php?id=<?= $row["id"]; ?>"><i class="bi bi-eye-fill"></i></a>
                     <a class="badge bg-warning" href="ubah.php?id=<?= $row["id"]; ?>"><i
                             class="bi bi-pencil-square"></i></a>
                     <a class="badge bg-danger" href="hapus.php?id=<?= $row["id"]; ?>"
